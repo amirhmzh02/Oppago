@@ -1,0 +1,365 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ #oppa-navbar,
+ #oppa-navbar * {
+     box-sizing: content-box;
+
+ }
+
+ body {
+     background-color: #151515;
+ }
+
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+
+ /* Navigation Styles */
+ .navbar {
+     background-color: #1D1D1D;
+     border-radius: 12px;
+     overflow: hidden;
+     margin-bottom: 30px;
+     margin-top: 50px;
+ }
+
+ .nav-list {
+     display: flex;
+     list-style: none;
+     justify-content: space-between;
+     padding: 0 20px;
+ }
+
+ /* Make sure the nav-item is a flex container */
+ .nav-item {
+     flex: 1;
+     text-align: center;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px 0;
+ }
+
+ /* Adjust the separator lines to account for the padding */
+ .nav-item:not(:last-child)::after {
+     content: '';
+     position: absolute;
+     right: 0;
+     top: 50%;
+     transform: translateY(-50%);
+     height: 60%;
+     width: 2px;
+     background-color: #FEBF01;
+ }
+
+ .nav-link {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px 15px;
+     text-decoration: none;
+     color: white;
+     position: relative;
+ }
+
+ .nav-link i {
+     font-size: 24px;
+     margin-bottom: 8px;
+     color: #666;
+     transition: all 0.3s ease;
+ }
+
+ .nav-link span {
+     font-weight: 600;
+     font-size: 16px;
+     transition: all 0.3s ease;
+ }
+
+ .nav-link.active {
+     background-color: #FEBF01;
+     border-radius: 10px;
+     margin: 0 auto;
+     width: 80%;
+     height: 80%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .nav-link.active span {
+     color: white;
+ }
+
+ .nav-link.active i {
+     color: white;
+ }
+
+ /* Menu Cards Styles */
+ .menu-container {
+     display: none;
+     margin-top: 30px;
+     background-color: #1D1D1D;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+     overflow: hidden;
+     padding: 20px;
+ }
+
+ .menu-container.active {
+     display: block;
+     animation: fadeIn 0.5s ease;
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ .menu-title {
+     font-size: 24px;
+     margin-bottom: 20px;
+     color: #333;
+     border-bottom: 2px solid #FEBF01;
+     padding-bottom: 10px;
+ }
+
+ .menu-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+ }
+
+ .menu-card {
+     background-color: #fff;
+     border-radius: 8px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .menu-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+ }
+
+ .menu-card-img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+ }
+
+ .menu-card-content {
+     padding: 15px;
+ }
+
+ .menu-card-title {
+     font-size: 18px;
+     margin-bottom: 8px;
+     color: #333;
+ }
+
+ .menu-card-desc {
+     font-size: 14px;
+     color: #666;
+     line-height: 1.4;
+     text-align: justify;
+
+ }
+
+
+ .nav-link .icon {
+     width: 40px;
+     height: 40px;
+     object-fit: contain;
+     margin-bottom: 8px;
+     transition: all 0.3s ease;
+     filter: brightness(0) invert(1);
+ }
+
+ /* Mobile Carousel Styles */
+ .mobile-carousel-container {
+     display: none;
+     margin-top: 30px;
+     background-color: #1D1D1D;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+     overflow: hidden;
+     padding: 20px;
+ }
+
+ .mobile-carousel-container.active {
+     display: block;
+ }
+
+ .mobile-carousel-title {
+     font-size: 20px;
+     margin-bottom: 15px;
+     color: #333;
+     border-bottom: 2px solid #FEBF01;
+     padding-bottom: 10px;
+ }
+
+ .mobile-carousel {
+     position: relative;
+     overflow: hidden;
+     border-radius: 8px;
+ }
+
+ .mobile-carousel-track {
+     display: flex;
+     transition: transform 0.5s ease;
+ }
+
+ .mobile-carousel-card {
+     flex: 0 0 100%;
+     padding: 10px;
+ }
+
+ .mobile-card {
+     background-color: #fff;
+     border-radius: 8px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .mobile-card-img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+ }
+
+ .mobile-card-content {
+     padding: 15px;
+ }
+
+ .mobile-card-title {
+     font-size: 18px;
+     margin-bottom: 8px;
+     color: #333;
+ }
+
+ .mobile-card-desc {
+     font-size: 14px;
+     color: #666;
+     line-height: 1.4;
+ }
+
+ .mobile-carousel-indicators {
+     display: flex;
+     justify-content: center;
+     margin-top: 15px;
+ }
+
+ .mobile-carousel-indicator {
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     background-color: #ddd;
+     margin: 0 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .mobile-carousel-indicator.active {
+     background-color: #FEBF01;
+ }
+
+ .mobile-carousel-controls {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 15px;
+ }
+
+ .mobile-carousel-controls button {
+     background-color: #FEBF01;
+     border: none;
+     color: white;
+     padding: 8px 16px;
+     border-radius: 4px;
+     cursor: pointer;
+     font-weight: 600;
+     transition: background-color 0.3s;
+ }
+
+ .mobile-carousel-controls button:hover {
+     background-color: #e6ac00;
+ }
+
+ /* Mobile Styles */
+ @media (max-width: 768px) {
+     .nav-list {
+         flex-direction: column;
+     }
+
+     .nav-item:not(:last-child)::after {
+         display: none;
+     }
+
+     .nav-item:not(:last-child) {
+         border-bottom: 2px solid #FEBF01;
+     }
+
+     .nav-link {
+         flex-direction: row;
+         justify-content: flex-start;
+         padding: 15px 20px;
+     }
+
+     .nav-link i {
+         margin-bottom: 0;
+         margin-right: 15px;
+         font-size: 20px;
+     }
+
+     .nav-link .icon {
+         margin-bottom: 0;
+         margin-right: 15px;
+         width: 20px;
+         height: 20px;
+     }
+
+     /* Hide menu grid on mobile */
+     .menu-container {
+         display: none !important;
+     }
+
+     /* Show carousel on mobile */
+     .mobile-carousel-container {
+         display: none;
+     }
+
+     .mobile-carousel-container.active {
+         display: block;
+     }
+ }
+
+ /* Desktop styles */
+ @media (min-width: 769px) {
+
+     /* Hide mobile carousel on desktop */
+     .mobile-carousel-container {
+         display: none !important;
+     }
+
+     /* Show menu cards on desktop */
+     .menu-container {
+         display: none;
+     }
+
+     .menu-container.active {
+         display: block;
+     }
+ }
