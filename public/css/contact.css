@@ -37,7 +37,7 @@
 /* Image section */
 .image-section {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../image/bg.png') center/cover no-repeat;
+        url('../storage/image/bg.png') center/cover no-repeat;
     height: 250px;
     display: flex;
     flex-direction: column;

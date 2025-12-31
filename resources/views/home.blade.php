@@ -28,24 +28,24 @@
             </div>
 
             <ul class="nav-links left-side">
-                <li><a href="/home">HOME</a></li>
+                <li><a href="/">HOME</a></li>
                 <li><a href="/menu">OUR MENU</a></li>
             </ul>
 
             <div class="nav-logo">
                 <a href="/home">
-                    <img src="{{asset('image/logo.png')}}" alt="OppaGo Logo">
+                    <img src="{{asset('storage/image/logo.png')}}" alt="OppaGo Logo">
                 </a>
             </div>
 
             <ul class="nav-links right-side">
-                <li><a href="/review">REVIEW</a></li>
+                <li><a href="#review">REVIEW</a></li>
 
                 <li class="dropdown-item">
-                    <a href="/order" class="dropbtn">ORDER ▾</a>
+                    <a href="" class="dropbtn">ORDER ▾</a>
                     <div class="dropdown-content">
-                        <a href="/order/pickup">Pickup</a>
-                        <a href="/order/delivery">Delivery</a>
+                        <a href="https://easyeat.ai/r/spicylit-cafe/3">Pickup</a>
+                        <a href="https://easyeat.ai/r/spicylit-cafe/2?page=2">Delivery</a>
                     </div>
                 </li>
             </ul>
@@ -60,12 +60,12 @@
         <ul class="sidebar-links">
             <li><a href="/">Home</a></li>
             <li><a href="/menu">Our Menu</a></li>
-            <li><a href="/review">Review</a></li>
+            <li><a href="#review">Review</a></li>
             <li class="sidebar-dropdown">
                 <span>Order ▾</span>
                 <ul class="sidebar-submenu">
-                    <li><a href="/order/pickup">Pickup</a></li>
-                    <li><a href="/order/delivery">Delivery</a></li>
+                    <li><a href="https://easyeat.ai/r/spicylit-cafe/3">Pickup</a></li>
+                    <li><a href="https://easyeat.ai/r/spicylit-cafe/2?page=2">Delivery</a></li>
                 </ul>
             </li>
         </ul>
@@ -82,7 +82,7 @@
                     Rich flavor in every bite.
                 </p>
                 <div class="hero-buttons">
-                    <a href="/order" class="btn-primary">Order Online</a>
+                    <a href="https://easyeat.ai/r/spicylit-cafe/3" class="btn-primary">Order Online</a>
                     <a href="/menu" class="btn-secondary">View Menu</a>
                 </div>
             </div>
@@ -90,13 +90,13 @@
             <div class="hero-visual">
                 <div class="slideshow-container">
                     <div class="slide fade active">
-                        <img src="{{ asset('image/menu-img/ayam/10pcs.png') }}" alt="Signature Wings">
+                        <img src="{{ asset('storage/image/menu-img/ayam/10pcs.png') }}" alt="Signature Wings">
                     </div>
                     <div class="slide fade">
-                        <img src="{{ asset('image/menu-img/ayam/soygarlic.png') }}" alt="Soy Garlic">
+                        <img src="{{ asset('storage/image/menu-img/ayam/soygarlic.png') }}" alt="Soy Garlic">
                     </div>
                     <div class="slide fade">
-                        <img src="{{ asset('image/menu-img/ayam/buttermilk.png') }}" alt="Mixed Platter">
+                        <img src="{{ asset('storage/image/menu-img/ayam/buttermilk.png') }}" alt="Mixed Platter">
                     </div>
                 </div>
 
@@ -124,19 +124,19 @@
                 </button>
                 <div class="carousel-items-container">
                     <div class="menu-item active-center" data-index="0">
-                        <img src="{{ asset('image/menu-img/ayam/10pcs.png') }}" alt="Menu Item 1">
+                        <img src="{{ asset('storage/image/menu-img/ayam/10pcs.png') }}" alt="Menu Item 1">
                     </div>
                     <div class="menu-item active-right" data-index="1">
-                        <img src="{{ asset('image/menu-img/ayam/soygarlic.png') }}" alt="Menu Item 2">
+                        <img src="{{ asset('storage/image/menu-img/ayam/soygarlic.png') }}" alt="Menu Item 2">
                     </div>
                     <div class="menu-item hidden" data-index="2">
-                        <img src="{{ asset('image/menu-img/ayam/buttermilk.png') }}" alt="Menu Item 3">
+                        <img src="{{ asset('storage/image/menu-img/ayam/buttermilk.png') }}" alt="Menu Item 3">
                     </div>
                     <div class="menu-item hidden" data-index="3">
-                        <img src="{{ asset('image/menu-img/ayam/10pcs.png') }}" alt="Menu Item 4">
+                        <img src="{{ asset('storage/image/menu-img/ayam/10pcs.png') }}" alt="Menu Item 4">
                     </div>
                     <div class="menu-item hidden" data-index="4">
-                        <img src="{{ asset('image/menu-img/ayam/10pcs.png') }}" alt="Menu Item 5">
+                        <img src="{{ asset('storage/image/menu-img/ayam/10pcs.png') }}" alt="Menu Item 5">
                     </div>
                 </div>
 
@@ -173,7 +173,7 @@
                     </div>
                     <h3 class="card-title">DELIVERY</h3>
                     <p class="card-subtitle">Order ready in 15 min</p>
-                    <a href="/order/delivery" class="card-btn primary">Order Delivery</a>
+                    <a href="https://easyeat.ai/r/spicylit-cafe/2" class="card-btn primary">Order Delivery</a>
                     <a href="/menu" class="card-btn secondary">View Menu</a>
                 </div>
 
@@ -184,7 +184,7 @@
                     </div>
                     <h3 class="card-title">PICKUP</h3>
                     <p class="card-subtitle">Order ready in 15 min</p>
-                    <a href="/order/pickup" class="card-btn primary">Order Pickup</a>
+                    <a href="https://easyeat.ai/r/spicylit-cafe/3" class="card-btn primary">Order Pickup</a>
                     <a href="/menu" class="card-btn secondary">View Menu</a>
                 </div>
             </div>
@@ -258,7 +258,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="{{asset('image/logo.png')}}" alt="OppaGo Logo">
+                        <img src="{{asset('storage/image/logo.png')}}" alt="OppaGo Logo">
                         <p class="tagline">Chicken Wings & Topokki</p>
                     </div>
                     <p class="footer-description">Delicious Korean-inspired chicken wings and topokki in Shah Alam.
@@ -280,11 +280,11 @@
                 <div class="footer-section">
                     <h3 class="footer-heading">Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Menu</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Find Us</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="#oppa-hero"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="/menu"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                        <li><a href="#review"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#oppa-find-us"><i class="fas fa-chevron-right"></i> Find Us</a></li>
+                        <li><a href="#oppa-find-us"><i class="fas fa-chevron-right"></i> Contact</a></li>
                     </ul>
                 </div>
 

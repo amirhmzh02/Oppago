@@ -27,24 +27,24 @@
                 </div>
 
                 <ul class="nav-links left-side">
-                    <li><a href="/home">HOME</a></li>
+                    <li><a href="/">HOME</a></li>
                     <li><a href="/menu">OUR MENU</a></li>
                 </ul>
 
                 <div class="nav-logo">
                     <a href="/home">
-                        <img src="{{asset('image/logo.png')}}" alt="OppaGo Logo">
+                        <img src="{{asset('storage/image/logo.png')}}" alt="OppaGo Logo">
                     </a>
                 </div>
 
                 <ul class="nav-links right-side">
-                    <li><a href="/review">REVIEW</a></li>
+                    <li><a href="/#review">REVIEW</a></li>
 
                     <li class="dropdown-item">
-                        <a href="/order" class="dropbtn">ORDER ▾</a>
+                        <a href="" class="dropbtn">ORDER ▾</a>
                         <div class="dropdown-content">
-                            <a href="/order/pickup">Pickup</a>
-                            <a href="/order/delivery">Delivery</a>
+                            <a href="https://easyeat.ai/r/spicylit-cafe/3">Pickup</a>
+                            <a href="https://easyeat.ai/r/spicylit-cafe/2?page=2">Delivery</a>
                         </div>
                     </li>
                 </ul>
@@ -59,12 +59,12 @@
             <ul class="sidebar-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="/menu">Our Menu</a></li>
-                <li><a href="/review">Review</a></li>
+                <li><a href="#review">Review</a></li>
                 <li class="sidebar-dropdown">
                     <span>Order ▾</span>
                     <ul class="sidebar-submenu">
-                        <li><a href="/order/pickup">Pickup</a></li>
-                        <li><a href="/order/delivery">Delivery</a></li>
+                        <li><a href="https://easyeat.ai/r/spicylit-cafe/">Pickup</a></li>
+                        <li><a href="https://easyeat.ai/r/spicylit-cafe/2?page=2">Delivery</a></li>
                     </ul>
                 </li>
             </ul>
@@ -77,31 +77,31 @@
             <ul class="nav-list">
                 <li class="nav-item">
                     <a href="#" class="nav-link active" data-target="signature">
-                        <img class="icon" src="image/menu-page/chicken-wings.png" alt="">
+                        <img class="icon" src="storage/image/menu-page/chicken-wings.png" alt="">
                         <span>SIGNATURE</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-target="rabokki">
-                        <img class="icon" src="image/menu-page/noodles.png" alt="">
+                        <img class="icon" src="storage/image/menu-page/noodles.png" alt="">
                         <span>RABOKKI</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-target="toppokki">
-                        <img class="icon" src="image/menu-page/tteokbokki.png" alt="">
+                        <img class="icon" src="storage/image/menu-page/tteokbokki.png" alt="">
                         <span>TOPPOKKI</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-target="side-dish">
-                        <img class="icon" src="image/menu-page/fries.png" alt="">
+                        <img class="icon" src="storage/image/menu-page/fries.png" alt="">
                         <span>SIDE DISH</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-target="drinks">
-                        <img class="icon" src="image/menu-page/cooking.png" alt="">
+                        <img class="icon" src="storage/image/menu-page/cooking.png" alt="">
                         <span>RICE</span>
                     </a>
                 </li>
@@ -113,7 +113,7 @@
             <!-- <h2 class="menu-title">Signature Wings</h2> -->
             <div class="menu-grid">
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/ayam/10pcs.png" alt="Classic Tteokbokki">
+                    <img class="menu-card-img" src="storage/image/menu-img/ayam/10pcs.png" alt="Classic Tteokbokki">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Mix 10 Pcs</h3>
                         <p class="menu-card-desc">Mix flavor of our signature wings, perfect for sharing with family and
@@ -121,21 +121,21 @@
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/ayam/kroean.png" alt="Classic Tteokbokki">
+                    <img class="menu-card-img" src="storage/image/menu-img/ayam/kroean.png" alt="Classic Tteokbokki">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Korean Spicy Wings</h3>
                         <p class="menu-card-desc">Classic Korean-style spicy wings with our special gochujang glaze.</p>
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/ayam/soygarlic.png" alt="Cheese Tteokbokki">
+                    <img class="menu-card-img" src="storage/image/menu-img/ayam/soygarlic.png" alt="Cheese Tteokbokki">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Soy Garlic Wings</h3>
                         <p class="menu-card-desc">Savory wings with sweet soy sauce and aromatic garlic flavor.</p>
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/ayam/salted.png" alt="Cream Tteokbokki">
+                    <img class="menu-card-img" src="storage/image/menu-img/ayam/salted.png" alt="Cream Tteokbokki">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Salted Egg Wings</h3>
                         <p class="menu-card-desc">Crispy wings coated with rich salted egg yolk flavour, serve with
@@ -143,7 +143,7 @@
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/ayam/creamy.png" alt="Cream Tteokbokki">
+                    <img class="menu-card-img" src="storage/image/menu-img/ayam/creamy.png" alt="Cream Tteokbokki">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Creamy Cheese Wings</h3>
                         <p class="menu-card-desc">Crispy wings coated with our special creamy cheese powder, serve with
@@ -151,7 +151,7 @@
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/ayam/buttermilk.png" alt="Cream Tteokbokki">
+                    <img class="menu-card-img" src="storage/image/menu-img/ayam/buttermilk.png" alt="Cream Tteokbokki">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Buttermilk Wings</h3>
                         <p class="menu-card-desc">Creamy, juicy buttermilk wings with a mild and delicious flavor.</p>
@@ -167,7 +167,7 @@
                 <div class="mobile-carousel-track" id="signature-track">
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/ayam/10pcs.png" alt="Mix 10 Pcs">
+                            <img class="mobile-card-img" src="storage/image/menu-img/ayam/10pcs.png" alt="Mix 10 Pcs">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Mix 10 Pcs</h3>
                                 <p class="mobile-card-desc">Mix flavor of our signature wings, perfect for sharing with
@@ -177,7 +177,8 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/ayam/kroean.png" alt="Korean Spicy Wings">
+                            <img class="mobile-card-img" src="storage/image/menu-img/ayam/kroean.png"
+                                alt="Korean Spicy Wings">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Korean Spicy Wings</h3>
                                 <p class="mobile-card-desc">Classic Korean-style spicy wings with our special gochujang
@@ -187,7 +188,8 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/ayam/soygarlic.png" alt="Soy Garlic Wings">
+                            <img class="mobile-card-img" src="storage/image/menu-img/ayam/soygarlic.png"
+                                alt="Soy Garlic Wings">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Soy Garlic Wings</h3>
                                 <p class="mobile-card-desc">Savory wings with sweet soy sauce and aromatic garlic
@@ -197,7 +199,8 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/ayam/salted.png" alt="Salted Egg Wings">
+                            <img class="mobile-card-img" src="storage/image/menu-img/ayam/salted.png"
+                                alt="Salted Egg Wings">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Salted Egg Wings</h3>
                                 <p class="mobile-card-desc">Crispy wings coated with rich salted egg yolk flavour, serve
@@ -207,7 +210,8 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/ayam/creamy.png" alt="Creamy Cheese Wings">
+                            <img class="mobile-card-img" src="storage/image/menu-img/ayam/creamy.png"
+                                alt="Creamy Cheese Wings">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Creamy Cheese Wings</h3>
                                 <p class="mobile-card-desc">Crispy wings coated with our special creamy cheese powder,
@@ -217,7 +221,7 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/ayam/buttermilk.png"
+                            <img class="mobile-card-img" src="storage/image/menu-img/ayam/buttermilk.png"
                                 alt="Buttermilk Wings">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Buttermilk Wings</h3>
@@ -242,7 +246,7 @@
             <!-- <h2 class="menu-title">Rabokki Specials</h2> -->
             <div class="menu-grid">
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/ramen/spicy.png" alt="Classic Rabokki">
+                    <img class="menu-card-img" src="storage/image/menu-img/ramen/spicy.png" alt="Classic Rabokki">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Original Spicy Rabokki</h3>
                         <p class="menu-card-desc">Classic spicy ramen combined with our signature sauce, loaded with
@@ -250,7 +254,7 @@
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/ramen/carbonara.png" alt="Seafood Rabokki">
+                    <img class="menu-card-img" src="storage/image/menu-img/ramen/carbonara.png" alt="Seafood Rabokki">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Salted Carbonara Rabokki</h3>
                         <p class="menu-card-desc">Creamy carbonara ramen with our special twist, featuring tteokbokki
@@ -258,7 +262,7 @@
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/ramen/quartro.png" alt="Seafood Rabokki">
+                    <img class="menu-card-img" src="storage/image/menu-img/ramen/quartro.png" alt="Seafood Rabokki">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Quatro Cheese Rabokki</h3>
                         <p class="menu-card-desc">quatro cheese ramen blended with our signature recipe, mixed with
@@ -266,7 +270,7 @@
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/ramen/jajamyon.png" alt="Seafood Rabokki">
+                    <img class="menu-card-img" src="storage/image/menu-img/ramen/jajamyon.png" alt="Seafood Rabokki">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">jjangmyeon Soy Rabokki</h3>
                         <p class="menu-card-desc">Savory jajangmyeon ramen with our unique soy garlic sauce, mixed with
@@ -283,7 +287,7 @@
                 <div class="mobile-carousel-track" id="rabokki-track">
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/ramen/spicy.png"
+                            <img class="mobile-card-img" src="storage/image/menu-img/ramen/spicy.png"
                                 alt="Original Spicy Rabokki">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Original Spicy Rabokki</h3>
@@ -294,7 +298,7 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/ramen/carbonara.png"
+                            <img class="mobile-card-img" src="storage/image/menu-img/ramen/carbonara.png"
                                 alt="Salted Carbonara Rabokki">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Salted Carbonara Rabokki</h3>
@@ -305,7 +309,7 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/ramen/quartro.png"
+                            <img class="mobile-card-img" src="storage/image/menu-img/ramen/quartro.png"
                                 alt="Quatro Cheese Rabokki">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Quatro Cheese Rabokki</h3>
@@ -316,7 +320,7 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/ramen/jajamyon.png"
+                            <img class="mobile-card-img" src="storage/image/menu-img/ramen/jajamyon.png"
                                 alt="Jjangmyeon Soy Rabokki">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Jjangmyeon Soy Rabokki</h3>
@@ -341,7 +345,7 @@
             <!-- <h2 class="menu-title">Toppokki Selection</h2> -->
             <div class="menu-grid">
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/toppoki/toppoki.png" alt="Jumbo Toppokki">
+                    <img class="menu-card-img" src="storage/image/menu-img/toppoki/toppoki.png" alt="Jumbo Toppokki">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Sweet Spicy Topokki</h3>
                         <p class="menu-card-desc">Chewy rice cake in sweet & spicy homemade souce with soft egg ,savory
@@ -349,7 +353,8 @@
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/toppoki/fried-toppoki.png" alt="Jumbo Toppokki">
+                    <img class="menu-card-img" src="storage/image/menu-img/toppoki/fried-toppoki.png"
+                        alt="Jumbo Toppokki">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Cheezy Fried Topokki</h3>
                         <p class="menu-card-desc">Cripy rice cake with juicy cocktail sausage couted with out signature
@@ -366,7 +371,8 @@
                 <div class="mobile-carousel-track" id="toppokki-track">
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/toppoki/toppoki.png" alt="Jumbo Toppokki">
+                            <img class="mobile-card-img" src="storage/image/menu-img/toppoki/toppoki.png"
+                                alt="Jumbo Toppokki">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Sweet Spicy Topokki</h3>
                                 <p class="mobile-card-desc">Chewy rice cake in sweet & spicy homemade souce with soft
@@ -376,7 +382,7 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/toppoki/fried-toppoki.png"
+                            <img class="mobile-card-img" src="storage/image/menu-img/toppoki/fried-toppoki.png"
                                 alt="Jumbo Toppokki">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Cheezy Fried Topokki</h3>
@@ -401,14 +407,15 @@
             <!-- <h2 class="menu-title">Fries</h2> -->
             <div class="menu-grid">
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/fries/fries.png" alt="Korean Fried Chicken">
+                    <img class="menu-card-img" src="storage/image/menu-img/fries/fries.png" alt="Korean Fried Chicken">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Original Fries</h3>
                         <p class="menu-card-desc">Crispy golden fries</p>
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/fries/bulgogi-fries.png" alt="Kimchi Pancake">
+                    <img class="menu-card-img" src="storage/image/menu-img/fries/bulgogi-fries.png"
+                        alt="Kimchi Pancake">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Loaded Bulgogi Beef Fries</h3>
                         <p class="menu-card-desc">Crispy fries topped with savory bulgogi beef and our mayonnaise sauce
@@ -416,14 +423,15 @@
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/fries/buttermilk-fries.png" alt="Kimchi Pancake">
+                    <img class="menu-card-img" src="storage/image/menu-img/fries/buttermilk-fries.png"
+                        alt="Kimchi Pancake">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Loaded Buttermilk Fries</h3>
                         <p class="menu-card-desc">Golden fries loaded with creamy buttermilk sauce</p>
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/gimari.png" alt="Kimchi Pancake">
+                    <img class="menu-card-img" src="storage/image/menu-img/gimari.png" alt="Kimchi Pancake">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Chicken Bulgogi Gimmari</h3>
                         <p class="menu-card-desc">Cripy seaweed rolls stuffed with juicy chicken bulgogi and glass
@@ -440,7 +448,8 @@
                 <div class="mobile-carousel-track" id="side-dish-track">
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/fries/fries.png" alt="Original Fries">
+                            <img class="mobile-card-img" src="storage/image/menu-img/fries/fries.png"
+                                alt="Original Fries">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Original Fries</h3>
                                 <p class="mobile-card-desc">Crispy golden fries</p>
@@ -449,7 +458,7 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/fries/bulgogi-fries.png"
+                            <img class="mobile-card-img" src="storage/image/menu-img/fries/bulgogi-fries.png"
                                 alt="Loaded Bulgogi Beef Fries">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Loaded Bulgogi Beef Fries</h3>
@@ -460,7 +469,7 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/fries/buttermilk-fries.png"
+                            <img class="mobile-card-img" src="storage/image/menu-img/fries/buttermilk-fries.png"
                                 alt="Loaded Buttermilk Fries">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Loaded Buttermilk Fries</h3>
@@ -470,7 +479,8 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/gimari.png" alt="Chicken Bulgogi Gimmari">
+                            <img class="mobile-card-img" src="storage/image/menu-img/gimari.png"
+                                alt="Chicken Bulgogi Gimmari">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Chicken Bulgogi Gimmari</h3>
                                 <p class="mobile-card-desc">Cripy seaweed rolls stuffed with juicy chicken bulgogi and
@@ -494,14 +504,14 @@
             <!-- <h2 class="menu-title">Rice</h2> -->
             <div class="menu-grid">
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/rice/seaweed-rice.png" alt="Seaweed Rice">
+                    <img class="menu-card-img" src="storage/image/menu-img/rice/seaweed-rice.png" alt="Seaweed Rice">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Seaweed Rice</h3>
                         <p class="menu-card-desc">Steamed rice mixed with seasoned seaweed and sesame oil</p>
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/rice/buttermilk-rice.png"
+                    <img class="menu-card-img" src="storage/image/menu-img/rice/buttermilk-rice.png"
                         alt="Buttermilk Chicken Rice">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Buttermilk Chicken Rice</h3>
@@ -509,7 +519,8 @@
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img class="menu-card-img" src="image/menu-img/rice/bulgogi-rice.png" alt="Bulgogi Beef Rice">
+                    <img class="menu-card-img" src="storage/image/menu-img/rice/bulgogi-rice.png"
+                        alt="Bulgogi Beef Rice">
                     <div class="menu-card-content">
                         <h3 class="menu-card-title">Bulgogi Beef Rice</h3>
                         <p class="menu-card-desc">Steamed rice topped with savory marinated bulgogi beef</p>
@@ -525,7 +536,8 @@
                 <div class="mobile-carousel-track" id="drinks-track">
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/rice/seaweed-rice.png" alt="Seaweed Rice">
+                            <img class="mobile-card-img" src="storage/image/menu-img/rice/seaweed-rice.png"
+                                alt="Seaweed Rice">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Seaweed Rice</h3>
                                 <p class="mobile-card-desc">Steamed rice mixed with seasoned seaweed and sesame oil</p>
@@ -534,7 +546,7 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/rice/buttermilk-rice.png"
+                            <img class="mobile-card-img" src="storage/image/menu-img/rice/buttermilk-rice.png"
                                 alt="Buttermilk Chicken Rice">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Buttermilk Chicken Rice</h3>
@@ -545,7 +557,7 @@
                     </div>
                     <div class="mobile-carousel-card">
                         <div class="mobile-card">
-                            <img class="mobile-card-img" src="image/menu-img/rice/bulgogi-rice.png"
+                            <img class="mobile-card-img" src="storage/image/menu-img/rice/bulgogi-rice.png"
                                 alt="Bulgogi Beef Rice">
                             <div class="mobile-card-content">
                                 <h3 class="mobile-card-title">Bulgogi Beef Rice</h3>
@@ -575,7 +587,7 @@
             const closeBtn = document.getElementById('close-sidebar');
 
             // Populate global element lists (Crucial fix for element selector failure)
-           
+
 
 
             // 1. Navbar Scroll Effect
