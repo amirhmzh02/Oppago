@@ -1,0 +1,226 @@
+/* --- OUR MENU SECTION SCOPED STYLES --- */
+
+/* You provided this base style, keeping it */
+#oppa-menu {
+    background-color: #1D1D1D;
+    color: white;
+    padding: 10px 0 60px;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+#oppa-menu .menu-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Titles and Underline */
+#oppa-menu .menu-pretitle {
+    color: #f1c40f; /* Gold/Yellow */
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-bottom: 5px;
+    letter-spacing: 5px;
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+
+#oppa-menu .menu-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#oppa-menu .title-underline {
+    width: 150px;
+    height: 5px;
+    background-color: #d92525; /* Red */
+    border-radius: 5px;
+    margin: 0 auto 50px auto;
+    margin-top: -10px;
+}
+
+/* --- CAROUSEL LAYOUT --- */
+#oppa-menu .menu-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Important to hide items outside the view */
+}
+
+#oppa-menu .carousel-items-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    height: 400px; /* Add fixed height */
+    margin: 0 auto; /* Center the container itself */
+}
+
+/* Base item styling */
+#oppa-menu .menu-item {
+    transition: all 0.4s ease-in-out;
+    background-color: transparent; /* Change from #ccc to transparent */
+    border-radius: 20px;
+    height: 350px; /* Base height */
+    width: 250px; /* Base width */
+    opacity: 1; /* Change from 0.3 to 1 */
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    left: 46%; /* Center horizontally by default */
+    top: 50%; /* Center vertically by default */
+    transform: translate(-50%, -50%); /* Center the item */
+}
+
+#oppa-menu .menu-item img {
+    width: 130%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Positioning Classes (Set dynamically by JS) */
+
+/* Left Item (Smaller) - Position from center */
+#oppa-menu .active-left {
+    transform: translate(-50%, -50%) translateX(-300px) scale(0.85);
+    z-index: 10;
+    opacity: 1;
+}
+
+/* Center Item (Biggest) - Keep centered */
+#oppa-menu .active-center {
+    transform: translate(-50%, -50%) scale(1.1);
+    z-index: 20;
+    opacity: 1;
+}
+
+/* Right Item (Smaller) - Position from center */
+#oppa-menu .active-right {
+    transform: translate(-50%, -50%) translateX(300px) scale(0.85);
+    z-index: 10;
+    opacity: 1;
+}
+
+/* Hidden Items - keep off-screen */
+#oppa-menu .hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.7);
+}
+
+
+/* --- NAVIGATION ARROWS --- */
+#oppa-menu .nav-arrow {
+    background-color: #f1c40f; /* Gold/Yellow background */
+    color: #1D1D1D;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 30;
+    transition: background-color 0.2s;
+}
+
+#oppa-menu .nav-arrow:hover {
+    background-color: #e0ac0a;
+}
+
+#oppa-menu .prev-btn {
+    left: 0;
+}
+
+#oppa-menu .next-btn {
+    right: 0;
+}
+
+/* --- SEE MORE BUTTON --- */
+#oppa-menu .btn-see-more {
+    background-color: #d92525; /* Red */
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#oppa-menu .btn-see-more:hover {
+    background-color: #b01c1c;
+    transform: translateY(-2px);
+}
+
+/* --- RESPONSIVE MOBILE VIEW (Only 1 item visible) --- */
+@media (max-width: 768px) {
+    #oppa-menu .menu-title {
+        font-size: 2.5rem;
+    }
+
+    /* Mobile: Only the center item is visible and full size */
+    #oppa-menu .menu-item {
+        width: 80vw; /* Take up 80% of viewport width */
+        height: auto;
+        max-height: 300px;
+    }
+
+    #oppa-menu .carousel-items-container {
+
+
+    max-width: 0px;
+    position: relative;
+    height: 500px; /* Add fixed height */
+    margin-top: -200px;
+    }
+
+    /* Mobile: Center item is the only active one, others are completely hidden off-screen */
+    #oppa-menu .active-center {
+        transform: translateX(0) scale(1); /* Center, no scale up */
+        left: 50%;
+        margin-left: -40vw; /* Adjust margin to truly center it */
+        width: 80vw;
+        opacity: 1;
+    }
+
+    #oppa-menu .active-left,
+    #oppa-menu .active-right,
+    #oppa-menu .hidden {
+        /* Move all non-center items far off-screen */
+        transform: translateX(9999px) scale(0); 
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Adjust arrow position on mobile */
+    #oppa-menu .nav-arrow {
+        /* visibility: hidden; */
+    }
+
+    #oppa-menu .menu-item img {
+    width: 100%;
+}
+
+   
+}
