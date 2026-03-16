@@ -1,3 +1,4 @@
+```mermaid
 
 ### Option 2: **Mermaid Live Editor** (https://mermaid.live)
 - Go to mermaid.live
